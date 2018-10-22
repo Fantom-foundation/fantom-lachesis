@@ -1,0 +1,23 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{ii}
+\contentsline {subsection}{\numberline {1.1}Previous Approaches of DAG}{iii}
+\contentsline {subsubsection}{\numberline {1.1.1}Tangle}{iii}
+\contentsline {subsubsection}{\numberline {1.1.2}Byteball}{iii}
+\contentsline {subsubsection}{\numberline {1.1.3}RaiBlocks}{iii}
+\contentsline {subsubsection}{\numberline {1.1.4}Hashgraph}{iv}
+\contentsline {subsection}{\numberline {1.2}Main Concepts}{iv}
+\contentsline {section}{\numberline {2}Lachesis Protocol}{v}
+\contentsline {subsection}{\numberline {2.1}Node Structure}{vii}
+\contentsline {subsection}{\numberline {2.2}Event Block Structure}{viii}
+\contentsline {subsection}{\numberline {2.3}Lachesis Protocol}{ix}
+\contentsline {section}{\numberline {3}Lachesis Consensus Algorithm}{xi}
+\contentsline {subsection}{\numberline {3.1}Main-chain}{xi}
+\contentsline {subsection}{\numberline {3.2}Clotho Selection}{xii}
+\contentsline {subsection}{\numberline {3.3}Decima Selection}{xiv}
+\contentsline {subsection}{\numberline {3.4}Atropos Consensus Time Selection}{xiv}
+\contentsline {section}{\numberline {4}Proof of Lachesis Consensus Algorithm}{xvii}
+\contentsline {section}{\numberline {5}Response to Attacks}{xxii}
+\contentsline {subsection}{\numberline {5.1}Sybil attack}{xxiii}
+\contentsline {subsection}{\numberline {5.2}Parasite chain attack}{xxiii}
+\contentsline {section}{\numberline {6}Conclusion}{xxiii}
+\contentsfinish 

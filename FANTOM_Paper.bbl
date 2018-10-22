@@ -1,0 +1,54 @@
+\begin{thebibliography}{10}
+
+\bibitem{hashgraph16}
+L.~Baird.
+\newblock Hashgraph consensus: fair, fast, byzantine fault tolerance.
+\newblock Technical report, 2016.
+
+\bibitem{Castro99}
+M.~Castro and B.~Liskov.
+\newblock Practical byzantine fault tolerance.
+\newblock In {\em Proceedings of the Third Symposium on Operating Systems
+  Design and Implementation}, OSDI '99, pages 173--186, Berkeley, CA, USA,
+  1999. USENIX Association.
+
+\bibitem{byteball16}
+A.~Churyumov.
+\newblock Byteball: A decentralized system for storage and transfer of value,
+  2016.
+
+\bibitem{Lamport82}
+L.~Lamport, R.~Shostak, and M.~Pease.
+\newblock The byzantine generals problem.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 4(3):382--401, July 1982.
+
+\bibitem{dpos14}
+D.~Larimer.
+\newblock Delegated proof-of-stake (dpos), 2014.
+
+\bibitem{raiblock17}
+C.~LeMahieu.
+\newblock Raiblocks: A feeless distributed cryptocurrency network, 2017.
+
+\bibitem{dagcoin15}
+S.~D. Lerner.
+\newblock Dagcoin, 2015.
+
+\bibitem{bitcoin08}
+S.~Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system, 2008.
+
+\bibitem{tangle17}
+S.~Popov.
+\newblock The tangle, 2017.
+
+\bibitem{ppcoin12}
+S.~N. Sunny~King.
+\newblock Ppcoin: Peer-to-peer crypto-currency with proof-of-stake, 2012.
+
+\bibitem{bcbook15}
+M.~Swan.
+\newblock {\em Blockchain: Blueprint for a new economy}.
+\newblock O'Reilly Media, 2015.
+
+\end{thebibliography}

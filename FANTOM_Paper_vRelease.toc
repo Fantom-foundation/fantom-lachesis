@@ -1,0 +1,44 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}Motivation}{3}
+\contentsline {subsection}{\numberline {1.2}Generic framework of $\mathcal {L}$ Protocols}{4}
+\contentsline {subsection}{\numberline {1.3}Lachesis protocol $L_0$}{7}
+\contentsline {subsection}{\numberline {1.4}Contributions}{8}
+\contentsline {section}{\numberline {2}Related work}{9}
+\contentsline {subsection}{\numberline {2.1}Lamport timestamps}{9}
+\contentsline {subsection}{\numberline {2.2}Concurrent common knowledge}{10}
+\contentsline {subsection}{\numberline {2.3}Consensus algorithms}{11}
+\contentsline {subsection}{\numberline {2.4}DAG-based Approaches}{12}
+\contentsline {section}{\numberline {3}Generic framework of Lachesis Protocols}{14}
+\contentsline {subsection}{\numberline {3.1}OPERA chain}{14}
+\contentsline {subsection}{\numberline {3.2}Main-chain}{14}
+\contentsline {subsection}{\numberline {3.3}Lachesis Consensus Algorithm (LCA)}{16}
+\contentsline {subsection}{\numberline {3.4}Node Structure}{17}
+\contentsline {subsection}{\numberline {3.5}Event block creation}{18}
+\contentsline {subsection}{\numberline {3.6}Topological ordering of events using Lamport timestamps}{19}
+\contentsline {subsection}{\numberline {3.7}Topological consensus ordering}{19}
+\contentsline {subsection}{\numberline {3.8}Peer selection algorithm}{22}
+\contentsline {section}{\numberline {4}Lachesis Consensus Protocol $L_0$}{22}
+\contentsline {subsection}{\numberline {4.1}Root Selection}{22}
+\contentsline {subsection}{\numberline {4.2}Clotho Selection}{24}
+\contentsline {subsection}{\numberline {4.3}Atropos Selection}{25}
+\contentsline {subsection}{\numberline {4.4}Peer selection algorithm via Cost function}{27}
+\contentsline {section}{\numberline {5}Discussions }{31}
+\contentsline {subsection}{\numberline {5.1}Lamport timestamps}{31}
+\contentsline {subsection}{\numberline {5.2}Semantics of Lachesis protocols}{32}
+\contentsline {section}{\numberline {6}Conclusion}{33}
+\contentsline {subsection}{\numberline {6.1}Future work}{33}
+\contentsline {section}{\numberline {7}Appendix}{35}
+\contentsline {subsection}{\numberline {7.1}Proof of Lachesis Consensus Algorithm}{35}
+\contentsline {subsubsection}{\numberline {7.1.1}Preliminaries}{35}
+\contentsline {subsubsection}{\numberline {7.1.2}Proof of Byzantine Fault Tolerance for Lachesis Consensus Algorithm}{35}
+\contentsline {subsection}{\numberline {7.2}Response to Attacks}{39}
+\contentsline {subsubsection}{\numberline {7.2.1}Transaction Flooding}{39}
+\contentsline {subsubsection}{\numberline {7.2.2}Parasite chain attack}{39}
+\contentsline {subsubsection}{\numberline {7.2.3}Double Spending}{39}
+\contentsline {subsubsection}{\numberline {7.2.4}Long-range attack}{40}
+\contentsline {subsubsection}{\numberline {7.2.5}Bribery attack}{40}
+\contentsline {subsubsection}{\numberline {7.2.6}Denial of Service}{41}
+\contentsline {subsubsection}{\numberline {7.2.7}Sybil}{41}
+\contentsline {section}{\numberline {8}Reference}{42}
+\contentsfinish 
