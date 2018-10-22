@@ -25,7 +25,7 @@ Generic framework of ℒ Protocols
 
 We introduce a generic framework of Lachesis protocols, called ℒ. The basic idea of Lachesis protocol is a DAG-based asynchronous non-deterministic protocol that guarantees pBFT. We propose OPERA chain — a new DAG structure for faster consensus. Lachesis protocol generates each block asynchronously and the Lachesis algorithm achieves consensus by confirming how many nodes know the blocks using the OPERA chain. Figure \[fig:operachain\] shows an example of OPERA chain constructed through a Lachesis protocol.
 
-<img src="lachesis_output" alt="An Example of OPERA Chain" height="264" />
+<img src="lachesis_output.pdf" alt="An Example of OPERA Chain" height="264" />
 
 The main concepts of Lachesis are given as follows:
 
@@ -68,7 +68,7 @@ The OPERA chain is the local view of the DAG held by each node, this local view 
 • Main-Chain
 Main-chain is a core subset of the OPERA chain. It is comprised of Atropos event blocks. Thus, the OPERA chain uses Main-chain to find rapid ordering between event blocks. In OPERA chain, each event block is assigned a proper consensus position.
 
-<img src="pBFTtoPath" alt="Consensus Method through Path Search in a DAG (combines chain with consensus process of pBFT)" height="264" />
+<img src="pBFTtoPath.pdf" alt="Consensus Method through Path Search in a DAG (combines chain with consensus process of pBFT)" height="264" />
 
 As a motivating example, Figure \[fig:pBFTtoPath\] illustrates how consensus is reached through the path search in the OPERA chain. In the figure, leaf set, denoted by *R*<sub>*s*0</sub>, consists of the first event blocks created by individual participant nodes. *V* is the set of event blocks that do not belong neither in *R*<sub>*s*0</sub> nor in any root set *R*<sub>*s**i*</sub>. Given a vertex *v* in *V* ∪ *R*<sub>*s**i*</sub>, there exists a path from *v* that can reach a leaf vertex *u* in *R*<sub>*s*0</sub>. Let *r*<sub>1</sub> and *r*<sub>2</sub> be root event blocks in root set *R*<sub>*s*1</sub> and *R*<sub>*s*2</sub>, respectively. *r*<sub>1</sub> is the block where a quorum or more blocks exist on a path that reaches a leaf event block. Every path from *r*<sub>1</sub> to a leaf vertex will contain a vertex in *V*<sub>1</sub>. Thus, if there exists a vertex *r* in *V*<sub>1</sub> such that *r* is created by more than a quorum of participants, then *r* is already included in *R*<sub>*s*1</sub>. Likewise, *r*<sub>2</sub> is a block that can be reached for *R*<sub>*s*1</sub> including *r*<sub>1</sub> through blocks made by a quorum of participants. For all leaf event blocks that could be reached by *r*<sub>1</sub>, they are shared with more than quorum participants through the presence of *r*<sub>1</sub>. The existence of the root *r*<sub>2</sub> shows that information of *r*<sub>1</sub> is shared with more than a quorum. This kind of a path search allows the chain to reach consensus in a similar manner as the pBFT consensus processes. It is essential to keep track of the blocks satisfying the pBFT consensus process for quicker path search; our OPERA chain and Main-chain keep track of these blocks.
 
@@ -204,7 +204,7 @@ The Main chain provides quick access to the previous transaction history to effi
 
 Based on these advantages, OPERA chain can respond strongly to efficient transaction treatment and attacks through its Main-chain.
 
-\[H\] <img src="mainchain" title="fig:" alt="An Example of Main-chain" height="302" />
+\[H\] <img src="mainchain.pdf" title="fig:" alt="An Example of Main-chain" height="302" />
 
 Lachesis Consensus Algorithm (LCA)
 ----------------------------------
@@ -224,7 +224,7 @@ This section gives an overview of node structure in Lachesis.
 
 Each node has a signature stamp, height vector, in-degree vector, flag table, root hash list, and Main-chain. Signature stamp is the data structure for storing the hash value that indicates the most recently created event block by the node. We call the most recently created event block the top event block. The flag table is a n dimensional vector. If an event block *e* created by *i*<sup>*t**h*</sup> node can reach *j*<sup>*t**h*</sup> root, then the *j*<sup>*t**h*</sup> value in the flag table of *e* becomes 1 (otherwise 0). Each node only maintains the flag table of the top event block.
 
-<img src="node_structure" alt="An Example of Node Structure" />
+<img src="node_structure.pdf" alt="An Example of Node Structure" />
 
 Figure \[fig:node\] shows an example of the node structure component of a node *A*. In the figure, the *s**i**g**n**a**t**u**r**e*<sub>*A*</sub> stores the hash value of the top event block of *A*. Each value in the height vector is the number of event blocks created by other nodes respectively. The value of *h*<sub>*i*</sub> is the number of event blocks created by the *i*<sup>*t**h*</sup> node. Each value in the in-degree vector is the number of edges from other event blocks created by other nodes to the top event block. The root hash list is the data structure storing the hash values of the root. The Main-chain is a data structure storing hash values of the Atropos blocks. The Main-chain is used to find event blocks with complete consensus. The root, Clotho and Atropos selection algorithm are introduced in Section \[se:lca\].
 
@@ -280,7 +280,7 @@ Figure \[fig:topological consensus ordering\] depicts an example of topological
 
 Figure \[fig:sequence of operachain\] shows the part of OPERA chain in which the final consensus order is determined based on these 3 rules. The number represented by each event block is a logical time based on Lamport timestamp.
 
-\[H\] <img src="sequence_operachain" title="fig:" alt="An Example of time ordering of event blocks in OPERA chain" height="302" />
+\[H\] <img src="sequence_operachain.pdf" title="fig:" alt="An Example of time ordering of event blocks in OPERA chain" height="302" />
 
 Final topological consensus order containing the event blocks based on agreement for the apropos. Based on each Atropos, they will have different colors depending on their range.
 
